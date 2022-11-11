@@ -1,0 +1,42 @@
+@charset "UFT-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.전체 {
+    background-color: #fee3ec;
+    width: 600px;
+    margin-top: 2200px;
+    position: relative;
+}
+
+.전체 .첫째 {
+    background-color: #f9c5d5;
+    width: 200px; height: 200px;
+    /* 이동시 position이 있어야한다. */
+    position: relative; /* 주위에 아무런 영향을 주지 않는다. */
+    left: 300px; /* 왼쪽을 기준으로 움직인다.*/
+}
+
+.전체 .둘째 {
+    background-color: #f999b7;
+    width: 200px; height: 200px;
+    position: absolute;    /* 하늘로 붕 떠서 독립
+    부모가 포지션이 없으면 찾아다님 */
+    left: 100px; top: 0;
+    
+}
+
+.전체 .셋째 {
+    background-color: #f2789f;
+    width: 200px; height: 200px;
+}
+
+.fixed{  /* 화면기준으로 움직여도 같은 위치에 있음 */
+    background-color: gray; color:white;
+    position: fixed;
+    top: 10px; right: 10px;
+    padding: 20px;
+}
